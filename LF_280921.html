@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/> <!--Lingua Latina -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Calculando de probabilidade lotofácil</title>
+        <link rel="stylesheet" href="_css/estilo.css"/>
+    </head>
+
+    <script src ="_javascript/funcoes.js"></script>
+    <script src ="_javascript/tabela.js"></script>
+
+    <body>
+        <div id="interface">
+            <h2 id="cabecalho">Lotofácil</h2> 
+
+            <section id="corpo">
+                <h2 id="cabecalho">Selecione os números</h2>
+                <div class="centroHrz">
+                <div id="linha1">
+                    <img src="_imagens/Numpt LF_01.png" id="Num1" onmousemove="mudacor1('Numam LF_01')" onmouseout="mudacor1('Numpt LF_01')" onclick="mudacor1('Numvm LF_01')"/>
+                    <img src="_imagens/Numpt LF_02.png" id="Num2" onmousemove="mudacor2('Numam LF_02')" onmouseout="mudacor2('Numpt LF_02')" onclick="mudacor2('Numvm LF_02')"/>
+                    <img src="_imagens/Numpt LF_03.png" id="Num3" onmousemove="mudacor3('Numam LF_03')" onmouseout="mudacor3('Numpt LF_03')" onclick="mudacor3('Numvm LF_03')"/>
+                    <img src="_imagens/Numpt LF_04.png" id="Num4" onmousemove="mudacor4('Numam LF_04')" onmouseout="mudacor4('Numpt LF_04')" onclick="mudacor4('Numvm LF_04')"/>
+                    <img src="_imagens/Numpt LF_05.png" id="Num5" onmousemove="mudacor5('Numam LF_05')" onmouseout="mudacor5('Numpt LF_05')" onclick="mudacor5('Numvm LF_05')"/>
+                </div>
+                <div id="linha2">
+                    <img src="_imagens/Numpt LF_06.png" id="Num6" onmousemove="mudacor6('Numam LF_06')" onmouseout="mudacor6('Numpt LF_06')" onclick="mudacor6('Numvm LF_06')"/>
+                    <img src="_imagens/Numpt LF_07.png" id="Num7" onmousemove="mudacor7('Numam LF_07')" onmouseout="mudacor7('Numpt LF_07')" onclick="mudacor7('Numvm LF_07')"/>
+                    <img src="_imagens/Numpt LF_08.png" id="Num8" onmousemove="mudacor8('Numam LF_08')" onmouseout="mudacor8('Numpt LF_08')" onclick="mudacor8('Numvm LF_08')"/>
+                    <img src="_imagens/Numpt LF_09.png" id="Num9" onmousemove="mudacor9('Numam LF_09')" onmouseout="mudacor9('Numpt LF_09')" onclick="mudacor9('Numvm LF_09')"/>
+                    <img src="_imagens/Numpt LF_10.png" id="Num10" onmousemove="mudacor10('Numam LF_10')" onmouseout="mudacor10('Numpt LF_10')" onclick="mudacor10('Numvm LF_10')"/>
+                </div>
+                <div id="linha3">
+                    <img src="_imagens/Numpt LF_11.png" id="Num11" onmousemove="mudacor11('Numam LF_11')" onmouseout="mudacor11('Numpt LF_11')" onclick="mudacor11('Numvm LF_11')"/>
+                    <img src="_imagens/Numpt LF_12.png" id="Num12" onmousemove="mudacor12('Numam LF_12')" onmouseout="mudacor12('Numpt LF_12')" onclick="mudacor12('Numvm LF_12')"/>
+                    <img src="_imagens/Numpt LF_13.png" id="Num13" onmousemove="mudacor13('Numam LF_13')" onmouseout="mudacor13('Numpt LF_13')" onclick="mudacor13('Numvm LF_13')"/>
+                    <img src="_imagens/Numpt LF_14.png" id="Num14" onmousemove="mudacor14('Numam LF_14')" onmouseout="mudacor14('Numpt LF_14')" onclick="mudacor14('Numvm LF_14')"/>
+                    <img src="_imagens/Numpt LF_15.png" id="Num15" onmousemove="mudacor15('Numam LF_15')" onmouseout="mudacor15('Numpt LF_15')" onclick="mudacor15('Numvm LF_15')"/>
+                </div>
+                <div id="linha4">
+                    <img src="_imagens/Numpt LF_16.png" id="Num16" onmousemove="mudacor16('Numam LF_16')" onmouseout="mudacor16('Numpt LF_16')" onclick="mudacor16('Numvm LF_16')"/>
+                    <img src="_imagens/Numpt LF_17.png" id="Num17" onmousemove="mudacor17('Numam LF_17')" onmouseout="mudacor17('Numpt LF_17')" onclick="mudacor17('Numvm LF_17')"/>
+                    <img src="_imagens/Numpt LF_18.png" id="Num18" onmousemove="mudacor18('Numam LF_18')" onmouseout="mudacor18('Numpt LF_18')" onclick="mudacor18('Numvm LF_18')"/>
+                    <img src="_imagens/Numpt LF_19.png" id="Num19" onmousemove="mudacor19('Numam LF_19')" onmouseout="mudacor19('Numpt LF_19')" onclick="mudacor19('Numvm LF_19')"/>
+                    <img src="_imagens/Numpt LF_20.png" id="Num20" onmousemove="mudacor20('Numam LF_20')" onmouseout="mudacor20('Numpt LF_20')" onclick="mudacor20('Numvm LF_20')"/>
+                </div>
+                <div id="linha5">
+                    <img src="_imagens/Numpt LF_21.png" id="Num21" onmousemove="mudacor21('Numam LF_21')" onmouseout="mudacor21('Numpt LF_21')" onclick="mudacor21('Numvm LF_21')"/>
+                    <img src="_imagens/Numpt LF_22.png" id="Num22" onmousemove="mudacor22('Numam LF_22')" onmouseout="mudacor22('Numpt LF_22')" onclick="mudacor22('Numvm LF_22')"/>
+                    <img src="_imagens/Numpt LF_23.png" id="Num23" onmousemove="mudacor23('Numam LF_23')" onmouseout="mudacor23('Numpt LF_23')" onclick="mudacor23('Numvm LF_23')"/>
+                    <img src="_imagens/Numpt LF_24.png" id="Num24" onmousemove="mudacor24('Numam LF_24')" onmouseout="mudacor24('Numpt LF_24')" onclick="mudacor24('Numvm LF_24')"/>
+                    <img src="_imagens/Numpt LF_25.png" id="Num25" onmousemove="mudacor25('Numam LF_25')" onmouseout="mudacor25('Numpt LF_25')" onclick="mudacor25('Numvm LF_25')"/>
+                </div>
+                </div>
+                <br><input type="button" value="Apagar" onclick="Apagar()">
+                </br></br>
+                <article id="noticia-principal">
+                    <h2>O que faz esse projeto.</h2>
+                    <p>
+                        Ao selecionar as 15 dezenas da esquerda, você escolhe uma sequência para ser avaliada
+                        se já foram sorteadas em sorteios anteriores para acertos de 11, 12, 13, 14 e 15 dezenas e a vrificação da probabilidade de acerto no próximo sorteio.
+                        </br></br> </p>
+                    <p class="direita">
+                        "Cada dia que amanhece assemelha-se a uma página em branco, na qual gravamos os nossos pensamentos, ações e atitudes. Na essência,</br> cada dia é a preparação de nosso próprio amanhã."
+                        </br> Chico Xavier</p>
+                    <figure class="foto-legenda">
+                        <img src="_imagens/lotofácil foto_2.jpg">
+                        <!--<img src="_imagens/Fundo note_01.png">-->
+                    </figure>
+                </article>
+            </section>
+
+            <aside> <!--id="lateral">-->
+                <!--<h2>Resultados</h2>-->
+                <br><input type="button" value="Selecionados" onclick="Verificar()">
+                <div>
+                    <p id="selNum">Números selecionados</p>
+                </div>
+                </br>
+                </br>
+                <input type="button" value="Calcular" onclick="Calcular()">
+                <div>
+                    <p id="soma">Soma dos números selecionados:</p></br>
+                    <p id="Confere">Repetições em concursos anteriores:</p></br>
+                </div>
+            </aside>
+            <footer id="rodape">
+                <p>Direito autoral &copy; 2021 - por 
+                    <a href="https://br.linkedin.com/" target="_blank"> Jailton Moreira dos Santos</a><br/>
+                    <a href="http://facebook.com" target="_blank">Facebook</a> |
+                    <a href="http//twitter.com" target="_blank">Twitter</a>
+                </p>
+            </footer> 
+        </div>
+    </Body>
+</html>

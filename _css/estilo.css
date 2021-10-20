@@ -1,0 +1,354 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body {
+    /*background-image: url("background.jpg");*/
+    /*background-color: rgb(35, 137, 195);*/
+    /*background-color: #dddddd;*/
+    background-image: url("_imagens/Fundo note_01.png");
+    color: rgba(0, 0, 0,1);
+    font-family: Arial, sans-serif;
+}
+
+div#interface {
+    width: 900px;
+    background-color: #f0ffff;
+    margin: -20px auto 10px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px; /*apenas um para o browser usar em todas as margens*/
+}
+/*
+div.centroHrz{
+    align-items: 10em;
+    background-color:  rgba(0, 50, 50, 0.8);
+    text-shadow: 20px auto 20px auto;
+}*/
+
+div.centroHrz {
+    height: 10em;
+    position: relative }
+div#linha1 {
+    margin: 0;
+    background: black;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+div#linha2 {
+    margin: 0;
+    background: black;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+div#linha3 {
+    margin: 0;
+    background: black;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+div#linha4 {
+    margin: 0;
+    background: black;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+div#linha5 {
+    margin: 0;
+    background: black;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+/*
+h1 {
+    font-family: Arial;
+    font-size: 30pt;
+    color: rgb(63, 102, 143);
+    text-shadow: 2px 2px 2px rgb(2, 0, 128);
+}
+*/
+p {
+    text-align: justify; 
+    text-indent: 50px;
+}
+/* TESTE
+#selNum {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  background-color: #ff00ff;
+  color: #0000ff;
+}*/
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p.observacao { /* APENAS COMO LEMBRETE DAS AULAS */
+    color: red;
+    font-size: 20px;
+    font-style: oblique;
+}
+/*formatação do cabeçalho*/
+header#cabecalho img#icone {
+    position: absolute;
+    left: 680px;
+    top: 40px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+    /* ../ = para pasta acima */
+}
+
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0,0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+/*header*/
+h2#cabecalho {
+    /*font-family: Arial, sans-serif;*/
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+/* Formatação de imagens*/
+figure.foto-legenda {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    border: 1px solid white;
+    /*box-shadow: 1px 1px 4px black;*/
+}
+
+figure.foto-legenda img {
+    width: 80%;
+    height: 80%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 2px;
+    background-color: rgba(0, 0, 0,0.4);
+    color: white;
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/*Formatação do menu*/
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 300px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10p;
+    margin: 2px;
+    transition: backgound-color 1s;
+    /* para forçar o funcionamento em browsers use:
+            - Safari: -webkit-
+            - Chrome: -webkit-
+            - Internet Explorer: -ms-
+            - Opera: -o-
+            - Firefox: -moz-
+            - Android: -webkit-
+            - iOS: -webkit-
+    */
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: #ffffff;
+}
+
+/*Formatação do corpo*/
+section#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#noticia-principal h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.direita {
+    text-align: right;
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+header#noticia-principal h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#noticia-principal h3 {
+    font-size: 12px;
+    color: #606060;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table#tabelaspec td {
+    border:  1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+    background-color: #cecece;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+aside#lateral {
+    display: block;
+    width: 450px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    /*box-shadow: 2px 2px 2px rgba(0, 0, 0,.5);*/
+}
+
+aside#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    background-color: #666666;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+
+video#filme1 {
+    display: block;
+    position: relative;
+    left: 110px;
+    top: -5px;
+    width: 250px;
+}
+
+video#filme2 {
+    display: block;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    width: 300px;
+}
+
