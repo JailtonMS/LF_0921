@@ -62,7 +62,7 @@
                         se já foram sorteadas em sorteios anteriores para acertos de 11, 12, 13, 14 e 15 dezenas e a vrificação da probabilidade de acerto no próximo sorteio.
                         </br></br> </p>
                     <p class="direita">
-                        "Cada dia que amanhece assemelha-se a uma página em branco, na qual gravamos os nossos pensamentos, ações e atitudes. Na essência,</br> cada dia é a preparação de nosso próprio amanhã."
+                        "Cada dia que amanhece assemelha-se a uma página em branco,</br>na qual gravamos os nossos pensamentos, ações e atitudes.</br>Na essência, cada dia é a preparação de nosso próprio amanhã."
                         </br> Chico Xavier</p>
                     <figure class="foto-legenda">
                         <img src="_imagens/lotofácil foto_2.jpg">
@@ -73,17 +73,20 @@
 
             <aside> <!--id="lateral">-->
                 <!--<h2>Resultados</h2>-->
-                <br><input type="button" value="Selecionados" onclick="Verificar()">
+                <br><input type="button" value="Selecionados" onclick="Selecionados()">
                 <div>
                     <p id="selNum">Números selecionados</p>
                 </div>
                 </br>
                 </br>
-                <input type="button" value="Calcular" onclick="Calcular()">
+                <input type="button" value="Verificar" onclick="Verificar()">
+                <input type="button" value="Apagar" onclick="ApagarVer()">
                 <div>
                     <p id="soma">Soma dos números selecionados:</p></br>
                     <p id="Confere">Repetições em concursos anteriores:</p></br>
                 </div>
+                </br>
+                <input type="button" value="Estatística" onclick="Probabilidade()">
             </aside>
             <footer id="rodape">
                 <p>Direito autoral &copy; 2021 - por 

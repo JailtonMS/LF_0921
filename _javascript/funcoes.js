@@ -26,6 +26,7 @@ var selecnum24 = false
 var selecnum25 = false
 var SelCart = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
 let valores = []
+var pontosTQQ = []
 var incpos = 0 /* Incremente posição*/
 
 function mudacor1(tipo){
@@ -424,8 +425,21 @@ function Apagar(){
         incpos--
     }
 }
+
+function ApagarVer(){
+    /*var limpaselecionados = document.getElementById("selNum")*/
+    var limpasoma = document.getElementById("soma")
+    var limparepetir = document.getElementById ("Confere")
+    /*limpaselecionados.style.color = "#000"
+    limpaselecionados.innerHTML = "<p>Números selecionados</p>"*/
+    limpasoma.style.color = "#000"
+    limpasoma.innerHTML = "<p>Soma dos números selecionados:</p>"
+    limparepetir.style.color = "#000"
+    limparepetir.innerHTML = "<p>Repetições em concursos anteriores:</p>"
+}
+
 /*ERRO: FORA DA FUNÇÃO ->> var res = document.getElementById("selNum")*/
-function Verificar() {
+function Selecionados() {
     var res = document.getElementById("selNum")
     if (valores.length == 0 || valores.length > 15) {
         if (valores.length == 0)
@@ -453,7 +467,8 @@ var jogos = [
 [21,4,17,5,3,13,16,9,20,24,25,19,11,15,10],
 [24,19,8,23,6,2,20,11,9,3,4,10,5,12,14]
 ]*/
-function Calcular(){
+
+function Verificar(){
     var somanum = 0
     var Concursos = 0
     var pontos = 0
@@ -493,14 +508,19 @@ function Calcular(){
             /*Verifica */
             switch (pontos){
                 case 11: ponto11++;
+                        pontosTQQ [0] = ponto11
                 break;
                 case 12: ponto12++;
+                        pontosTQQ [1] = ponto12
                 break;
                 case 13: ponto13++;
+                        pontosTQQ [2] = ponto13
                 break;
                 case 14: ponto14++;
+                        pontosTQQ [3] = ponto14        
                 break;
                 case 15: ponto15++;
+                        pontosTQQ [4] = ponto15
                 break;
                 default:
                 break;
@@ -508,33 +528,33 @@ function Calcular(){
             pontos = 0
         }
         /*Concursos = jogos.length*/
-
         
         if (valores.length <= 14){
             confjogo.style.color = "#f00"
             confjogo.innerHTML += `<p>Selecionar menos de 15 dezenas</br></p><p>invalidam números de repetições.</br</p>`
-        }
-        if (ponto11 != 0){
+        }else 
             confjogo.style.color = "#00f"
+
+        if (ponto11 != 0){
+            /*confjogo.style.color = "#00f"*/
             confjogo.innerHTML += `<p>11 pontos em ${ponto11} jogos.</br></p>`
         }
         if (ponto12 != 0){
-            confjogo.style.color = "#00f"
+            /*confjogo.style.color = "#00f"*/
             confjogo.innerHTML += `<p>12 pontos em ${ponto12} jogos.</br</p>`
         }
         if (ponto13 != 0){
-            confjogo.style.color = "#00f"
+            /*confjogo.style.color = "#00f"*/
             confjogo.innerHTML += `<p>13 pontos em ${ponto13} jogos.</br</p>`
         }
         if (ponto14 != 0){
-            confjogo.style.color = "#00f"
+            /*confjogo.style.color = "#00f"*/
             confjogo.innerHTML += `<p>14 pontos em ${ponto14} jogos.</br</p>`
         }
         if (ponto15 != 0){
-            confjogo.style.color = "#00f"
+            /*confjogo.style.color = "#00f"*/
             confjogo.innerHTML += `<p>15 pontos em ${ponto15} jogos.</br</p>`
         }
-        
         ponto11 = 0
         ponto12 = 0
         ponto13 = 0
@@ -542,4 +562,11 @@ function Calcular(){
         ponto15 = 0
     }
 } 
-/* shift+Alt e selecione no início (com a sete) para retornar o TAB com o DEL*/   
+/* shift+Alt e selecione no início (com a sete) para retornar o TAB com o DEL*/  
+function Probabilidade(){
+    if (pontosTQQ [4] >= 1 || pontosTQQ [3] >= 1 || pontosTQQ [2] >=5){
+        window.alert('Não é um bom jogo!!!')
+    }else {
+        window.alert('Bom jogo!!!')
+    }
+} 

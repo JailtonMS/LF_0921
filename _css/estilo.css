@@ -247,6 +247,7 @@ header#noticia-principal h1 {
 }
 .direita {
     text-align: right;
+    font-size: 7pt;
     margin-left: 80px;
     margin-top: 80px;
     margin-bottom: 80px;
