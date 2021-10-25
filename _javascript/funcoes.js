@@ -569,4 +569,7 @@ function Probabilidade(){
     }else {
         window.alert('Bom jogo!!!')
     }
+    for (var x in pontosTQQ){
+        pontosTQQ [x] = 0
+    }
 } 
